@@ -11,10 +11,10 @@ use Carbon\Carbon;
 class AuthController extends Controller
 {
     public function essais() {
-        $foyer = Foyer::find(1);
+        // $foyer = Foyer::find(1);
         $today = Carbon::today();
         return response([
-            'message' => $foyer->user,
+            'message' => "Test",
             'date' => Carbon::today()->toDateString()
         ]);
     }
